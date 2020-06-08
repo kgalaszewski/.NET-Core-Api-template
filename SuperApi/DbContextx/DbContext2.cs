@@ -9,6 +9,7 @@ namespace SuperApi.DbContextx
 
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
+            // todo add connection string
             var connectionString = "";
             builder.UseSqlServer(connectionString);
         }
