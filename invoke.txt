@@ -3,3 +3,8 @@ using var client = new HttpClient();
 var result = await client.GetAsync("link");
 Console.WriteLine(result.StatusCode);
 var result = "";
+
+
+ var client = new HttpClient();
+            var result = await client.GetStringAsync(@"https://superapi20200603113044.azurewebsites.net/donkey");
+            client.Dispose();
